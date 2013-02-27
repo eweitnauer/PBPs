@@ -63,12 +63,13 @@ dis_maps = {
 
 if (len(args.problem) == 0): args.problem.append("__empty__")
 
-for pbp_name in args.problem:
-  if (pbp_name == "__empty__"):
+for pbp_path in args.problem:
+  if (pbp_path == "__empty__"):
     scene_img = Image.open(args.frame_file)
   else:
-    scene_img = Image.open("%s/1-1.png" % pbp_name)
+    scene_img = Image.open("%s/1-1.png" % pbp_path)
   sw, sh = scene_img.size
+  pbp_name = pbp_path[pbp_path.rfind('pbp'):]
 
   xs = [gutter]; xs.append(xs[-1] + sh+gap); xs.append(xs[-1] + sh+middle_gap)
   xs.append(xs[-1] + sh+gap); xs.append(xs[-1] + sh+gutter)
@@ -84,9 +85,9 @@ for pbp_name in args.problem:
 
   for iy in range(len(ys)-1):
       for ix in range(len(xs)-1):
-        if (pbp_name != "__empty__"):
+        if (pbp_path != "__empty__"):
           scene_idx = dis_maps[args.mapping][iy][ix];
-          scene_img = Image.open("%s/%d-%d.png" % (pbp_name, scene_idx[0], scene_idx[1]))
+          scene_img = Image.open("%s/%d-%d.png" % (pbp_path, scene_idx[0], scene_idx[1]))
         img.paste(scene_img, (xs[ix],ys[iy]))
 
   draw = ImageDraw.Draw(img)
@@ -104,7 +105,7 @@ for pbp_name in args.problem:
     draw.text((round(3*xs[-1]/4)-bbox[1][0]/2, y), solution[1], (0,0,0), font=sol_font)
   del draw
 
-  if (pbp_name == "__empty__"):
+  if (pbp_path == "__empty__"):
     name = "%s/empty_grid.png" % (args.out_dir)
   else:
     name = "%s/%s.png" % (args.out_dir, pbp_name)
