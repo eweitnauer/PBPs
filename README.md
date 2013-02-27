@@ -1,7 +1,14 @@
-Image Files: 
-------------
+# Physical Bongard Problems #
 
-There is one svg file for each scene. The file name pattern is `{row}-{col}.png`.
+Physical Bongard Problems (PBPs) are collections of simple 2D physical scenes. Half of the scenes are on the left side, half of them on the right side. Solving the problem means finding the distinguishing difference between both sides. For example, the scenes on the left could all contain an object that will fall to the left, while the scenes on the right all contain an object that will fall to the right.
+
+All PBPs were created by Erik Weitnauer and are his dissertation topic. They are inspired by the classical [Bongard problems](en.wikipedia.org/wiki/Bongard_problem).
+
+Copyright by Erik Weitnauer, 2013.
+
+## Image Files ##
+
+There is one SVG file for each scene. The file name pattern is `{row}-{col}.png`.
 
 Each PBP has at least 20 scenes in this order:
 
