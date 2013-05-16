@@ -82,18 +82,6 @@
            style="opacity:0.98999999;color:#000000;fill:#e3f4d7;fill-opacity:1;fill-rule:nonzero;stroke:#5aa02c;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
            sodipodi:type="arc" />
         <path
-           sodipodi:type="arc"
-           style="color:#000000;fill:#e3f4d7;fill-opacity:1;fill-rule:nonzero;stroke:#5aa02c;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-           id="path4627"
-           sodipodi:cx="86.509949"
-           sodipodi:cy="33.20742"
-           sodipodi:rx="3.6970062"
-           sodipodi:ry="3.8613176"
-           d="m 89.402805,35.611739 a 3.6970062,3.8613176 0 1 1 0.01081,-0.01426"
-           sodipodi:start="0.67214775"
-           sodipodi:end="6.9506225"
-           sodipodi:open="true" />
-        <path
            sodipodi:open="true"
            sodipodi:end="6.9506225"
            sodipodi:start="0.67214775"

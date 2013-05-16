@@ -13,8 +13,8 @@
    height="101.5"
    id="svg3369"
    version="1.1"
-   inkscape:version="0.47 r22583"
-   sodipodi:docname="pbp-scene-1-1.svg">
+   inkscape:version="0.48.2 r9819"
+   sodipodi:docname="1-1.svg">
   <defs
      id="defs3371" />
   <sodipodi:namedview
@@ -25,15 +25,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="54.166219"
+     inkscape:cx="-35.232281"
      inkscape:cy="47.137597"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1-5"
+     inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="715"
-     inkscape:window-height="592"
-     inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-width="1695"
+     inkscape:window-height="1025"
+     inkscape:window-x="164"
+     inkscape:window-y="31"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata3374">
@@ -67,11 +67,6 @@
            width="100"
            id="rect9562-9"
            style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
-        <path
-           style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           d="m 150.37146,1167.2026 -0.32862,-6.7367"
-           id="path9564-7"
-           inkscape:connector-curvature="0" />
         <path
            id="path4418"
            d="m 149.45002,1159.1479 c -33.38059,2.2873 -66.506769,-3.2143 -99.285709,-3.2143"
