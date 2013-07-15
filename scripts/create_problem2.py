@@ -7,7 +7,8 @@ parser.add_argument("problem", nargs='*', help="Path that contains the PBP scene
 parser.add_argument("-s", "--with-solution", help="print solution above the problem", action="store_true", dest="with_sol")
 parser.add_argument("-n", "--with-number", help="print the problem number as title above the problem", action="store_true", dest="with_title")
 parser.add_argument("-t", "--with-tests", help="include the test scenes in the problem", action="store_true", dest="with_tests")
-parser.add_argument("-p", "--scene-positioning", help="is either {interleaved,blocked}-{sim,dis}-{sim,dis}, default is 'interleaved-sim-sim'", default="interleaved-sim-sim", dest="mapping", metavar="VAL")
+parser.add_argument("-c", "--condition", help="{interleaved,blocked,simultaneous}-{sim,dis}-{sim,dis}, default is 'interleaved-sim-sim'.\
+ The similarities are category similarities.", default="interleaved-sim-sim", dest="mapping", metavar="VAL")
 parser.add_argument("-f", "--frame-file", help="Png image file containing an empty frame, used when no problem paths are given. Default: frame.png", default="frame.png", metavar="FILE", dest="frame_file")
 parser.add_argument("-a", "--annotate", help="write scene names (A1, A2, ...) into each scene", action="store_true")
 parser.add_argument("-o", "--output-path", help="output path to which the pngs are written (default: '.')", default=".", dest="out_dir", metavar="PATH")
@@ -66,7 +67,7 @@ solutions = {
 }
 
 def pos2AB(y, x):
-  return ("A" if ix < 2 else "B") + str(1+y*2+(x%2))
+  return ("A" if x < 2 else "B") + str(1+y*2+(x%2))
 
 def AB2pos(side, number):
   x = (number-1)%2+1
@@ -78,12 +79,13 @@ def f(pair_str):
   m = re.search('([AB])(\d+)([AB])(\d+)', pair_str)
   return [AB2pos(m.group(1), int(m.group(2))), AB2pos(m.group(3), int(m.group(4)))]
 
-# positions scenes as in pbp3.2
+# positions scenes as in pbp3.2 an pbp4
+# we use category similarities here, so int-sim-dis and int-dis-sim are swapped.
 if args.exp_ver == '3.2':
   positions = {
      'interleaved-sim-sim': [f(pair) for pair in ['A1B1', 'A2B2', 'A3B3', 'A4B4', 'A5B5', 'A6B6', 'A7B7', 'A8B8', 'A9B9', 'A10B10']]  # wi: 8 bw: 4
-    ,'interleaved-sim-dis': [f(pair) for pair in ['A1B1', 'A3B3', 'A5B5', 'A7B7', 'A2B2', 'A4B4', 'A6B6', 'A8B8', 'A9B9', 'A10B10']]  # wi: 8 bw: 0
-    ,'interleaved-dis-sim': [f(pair) for pair in ['A1B3', 'A2B4', 'A3B5', 'A4B6', 'A5B7', 'A6B8', 'A7B1', 'A8B2', 'A9B9', 'A10B10']]  # wi: 0 bw: 4
+    ,'interleaved-sim-dis': [f(pair) for pair in ['A1B3', 'A2B4', 'A3B5', 'A4B6', 'A5B7', 'A6B8', 'A7B1', 'A8B2', 'A9B9', 'A10B10']]  # wi: 8 bw: 0
+    ,'interleaved-dis-sim': [f(pair) for pair in ['A1B1', 'A3B3', 'A5B5', 'A7B7', 'A2B2', 'A4B4', 'A6B6', 'A8B8', 'A9B9', 'A10B10']]  # wi: 0 bw: 4
     ,'interleaved-dis-dis': [f(pair) for pair in ['A1B3', 'A5B7', 'A4B2', 'A8B6', 'A3B1', 'A7B5', 'A2B4', 'A6B8', 'A9B9', 'A10B10']]  # wi: 0 bw: 0
     ,'blocked-sim-sim':     [f(pair) for pair in ['A1A2', 'B1B2', 'A3A4', 'B3B4', 'A5A6', 'B5B6', 'A7A8', 'B7B8', 'A9A10', 'B9B10']]  # wi: 8 bw: 4
     ,'blocked-sim-dis':     [f(pair) for pair in ['A1A2', 'B3B4', 'A5A6', 'B7B8', 'A3A4', 'B1B2', 'A7A8', 'B5B6', 'A9A10', 'B9B10']]  # wi: 8 bw: 0
@@ -94,8 +96,8 @@ elif args.exp_ver == '4' or args.exp_ver == '4.0':
      'interleaved-sim-sim':  [f(pair) for pair in ['A1B1', 'A2B2', 'A3B3', 'A4B4', 'A5B5', 'A6B6', 'A7B7', 'A8B8', 'A9B9', 'A10B10']]
     ,'simultaneous-sim-sim': [f(pair) for pair in ['A1A2', 'B1B2', 'A3A4', 'B3B4', 'A5A6', 'B5B6', 'A7A8', 'B7B8', 'A9A10', 'B9B10']]
     ,'simultaneous-sim-dis': [f(pair) for pair in ['A1A2', 'B3B4', 'A5A6', 'B7B8', 'A3A4', 'B1B2', 'A7A8', 'B5B6', 'A9A10', 'B9B10']]
-    ,'simultaneous-dis-sim': [f(pair) for pair in ['A1A3', 'B1B3', 'A5A7', 'B5B7', 'A2A4', 'B2B4', 'A6A8', 'B6B8', 'A9A10', 'B9B10']]
-    ,'simultaneous-dis-dis': [f(pair) for pair in ['A1A5', 'B3B7', 'A6A2', 'B8B4', 'A7A3', 'B5B1', 'A4A8', 'B2B6', 'A9A10', 'B9B10']]}
+    ,'simultaneous-dis-sim': [f(pair) for pair in ['A1A3', 'B1B3', 'A5A7', 'B5B7', 'A4A2', 'B4B2', 'A8A6', 'B8B6', 'A9A10', 'B9B10']]
+    ,'simultaneous-dis-dis': [f(pair) for pair in ['A1A5', 'B3B7', 'A3A7', 'B1B5', 'A6A2', 'B8B4', 'A8A4', 'B6B2', 'A9A10', 'B9B10']]}
 
 
 if (len(args.problem) == 0): args.problem.append("__empty__")
