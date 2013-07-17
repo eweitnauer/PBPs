@@ -14,7 +14,7 @@
    id="svg5673"
    version="1.1"
    inkscape:version="0.48.2 r9819"
-   sodipodi:docname="1-2.svg">
+   sodipodi:docname="2-3.svg">
   <defs
      id="defs5675" />
   <sodipodi:namedview
@@ -32,8 +32,8 @@
      showgrid="false"
      inkscape:window-width="923"
      inkscape:window-height="722"
-     inkscape:window-x="290"
-     inkscape:window-y="101"
+     inkscape:window-x="259"
+     inkscape:window-y="230"
      inkscape:window-maximized="0"
      showguides="true"
      inkscape:guide-bbox="true" />
@@ -45,7 +45,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -80,7 +80,7 @@
        id="rect3347"
        width="6.8198051"
        height="8.5860415"
-       x="-63.727921"
+       x="-60.227921"
        y="-1022.5191"
        transform="scale(-1,-1)" />
     <rect
@@ -88,7 +88,7 @@
        y="-1005.1441"
        x="-75.602921"
        height="10.586041"
-       width="6.8198051"
+       width="8.1948051"
        id="rect3349"
        style="opacity:0.98999999;color:#000000;fill:#e3f4d7;fill-opacity:1;fill-rule:nonzero;stroke:#5aa02c;stroke-width:0.99999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
   </g>
