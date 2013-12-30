@@ -14,7 +14,7 @@
    id="svg5673"
    version="1.1"
    inkscape:version="0.48.2 r9819"
-   sodipodi:docname="1-4.svg">
+   sodipodi:docname="2-1.svg">
   <defs
      id="defs5675" />
   <sodipodi:namedview
@@ -45,7 +45,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -83,5 +83,27 @@
        width="24.3207"
        id="rect3410"
        style="opacity:0.98999999;color:#000000;fill:#e3f4d7;fill-opacity:1;fill-rule:nonzero;stroke:#5aa02c;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#233e12;fill-opacity:0.9921568;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="38.301331"
+       y="1015.3896"
+       id="text2987"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2989"
+         x="38.301331"
+         y="1015.3896">A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#233e12;fill-opacity:0.9921568;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="55.750446"
+       y="1015.5884"
+       id="text2991"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2993"
+         x="55.750446"
+         y="1015.5884">B</tspan></text>
   </g>
 </svg>
