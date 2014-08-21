@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.9999999"
-     inkscape:cx="65.701071"
-     inkscape:cy="38.832485"
+     inkscape:zoom="5.6568542"
+     inkscape:cx="50.035091"
+     inkscape:cy="26.260043"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -67,40 +67,43 @@
        id="path3198"
        inkscape:connector-curvature="0"
        transform="translate(0,950.8622)" />
-    <path
-       transform="matrix(-0.37355242,-0.92760907,0.92760907,-0.37355242,0,0)"
-       style="opacity:0.98999999;color:#000000;fill:#e3f4d7;fill-opacity:1;fill-rule:nonzero;stroke:#5aa02c;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m -971.06305,-326.21854 22.84476,-0.47049 2.01685,0.7836 -0.54091,5.44451 -24.3207,0 z"
+    <rect
+       style="opacity:0.98999999;color:#000000;fill:#e3f4d7;fill-opacity:1;fill-rule:nonzero;stroke:#5aa02c;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect3408"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccccc" />
-    <path
-       sodipodi:nodetypes="cccccc"
-       inkscape:connector-curvature="0"
-       id="path3189"
-       d="m 41.192641,1022.6266 8.985773,-21.0152 0.0109,-2.1636 -5.252435,-1.53206 -9.085056,22.56006 z"
-       style="opacity:0.98999999;color:#000000;fill:#e3f4d7;fill-opacity:1;fill-rule:nonzero;stroke:#5aa02c;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       width="24.3207"
+       height="5.7576141"
+       x="-971.06305"
+       y="-326.21854"
+       transform="matrix(-0.37355242,-0.92760907,0.92760907,-0.37355242,0,0)" />
+    <rect
+       transform="matrix(0.37355242,-0.92760907,-0.92760907,-0.37355242,0,0)"
+       y="-420.3793"
+       x="-933.14404"
+       height="5.7576141"
+       width="24.3207"
+       id="rect3410"
+       style="opacity:0.98999999;color:#000000;fill:#e3f4d7;fill-opacity:1;fill-rule:nonzero;stroke:#5aa02c;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#233e12;fill-opacity:0.9921568;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-       x="37.832031"
-       y="1019.3724"
+       x="38.301331"
+       y="1015.3896"
        id="text2987"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan2989"
-         x="37.832031"
-         y="1019.3724">A</tspan></text>
+         x="38.301331"
+         y="1015.3896">A</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#233e12;fill-opacity:0.9921568;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-       x="59.031738"
-       y="1019.6224"
+       x="55.750446"
+       y="1015.5884"
        id="text2991"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan2993"
-         x="59.031738"
-         y="1019.6224">B</tspan></text>
+         x="55.750446"
+         y="1015.5884">B</tspan></text>
   </g>
 </svg>
