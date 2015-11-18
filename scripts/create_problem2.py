@@ -7,6 +7,7 @@ parser.add_argument("problem", nargs='*', help="Path that contains the PBP scene
 parser.add_argument("-s", "--with-solution", help="print solution above the problem", action="store_true", dest="with_sol")
 parser.add_argument("-n", "--with-number", help="print the problem number as title above the problem", action="store_true", dest="with_title")
 parser.add_argument("-t", "--with-tests", help="include the test scenes in the problem", action="store_true", dest="with_tests")
+parser.add_argument("--no-test-gap", help="show no vertical gap between training and test scenes", action="store_true", dest="no_test_gap")
 parser.add_argument("-c", "--condition", help="{interleaved,blocked,simultaneous}-{sim,dis}-{sim,dis}, default is 'interleaved-sim-sim'.\
  The similarities are category similarities.", default="interleaved-sim-sim", dest="mapping", metavar="VAL")
 parser.add_argument("-f", "--frame-file", help="Png image file containing an empty frame, used when no problem paths are given. Default: frame.png", default="frame.png", metavar="FILE", dest="frame_file")
@@ -16,12 +17,13 @@ parser.add_argument("-e", "--experiment-version", help="3.2 (default) or 4.0", d
 
 args = parser.parse_args()
 
-font_size_title = 24
+font_size_title = 28
 font_size_sol = 16
 gutter = 5
 gap = -2
 middle_gap = 40
 test_gap = 18
+if args.no_test_gap: test_gap = gap
 
 sol_font = ImageFont.truetype("/Users/erik/Library/Fonts/Ubuntu-R.ttf", font_size_sol)
 title_font = ImageFont.truetype("/Users/erik/Library/Fonts/Ubuntu-R.ttf", font_size_title)
