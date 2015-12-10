@@ -13,8 +13,8 @@
    height="101.5"
    id="svg3369"
    version="1.1"
-   inkscape:version="0.91+devel+osxmenu r12844"
-   sodipodi:docname="1-1.svg">
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="pbp-scene-1-3.svg">
   <defs
      id="defs3371" />
   <sodipodi:namedview
@@ -25,15 +25,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="42.20165"
-     inkscape:cy="46.960456"
+     inkscape:cx="50.787947"
+     inkscape:cy="46.707918"
      inkscape:document-units="px"
-     inkscape:current-layer="g9003"
+     inkscape:current-layer="layer1-5"
      showgrid="false"
      inkscape:window-width="761"
      inkscape:window-height="602"
-     inkscape:window-x="583"
-     inkscape:window-y="209"
+     inkscape:window-x="1124"
+     inkscape:window-y="275"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata3374">
@@ -75,21 +75,21 @@
         <rect
            transform="scale(-1,-1)"
            inkscape:transform-center-y="13.21919"
-           inkscape:transform-center-x="-3.3000058"
-           style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:0.98999999;fill:#e3f4d7;fill-opacity:1;fill-rule:nonzero;stroke:#5aa02c;stroke-width:0.99999988;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+           inkscape:transform-center-x="-3.1071351"
+           style="opacity:0.98999999;color:#000000;fill:#e3f4d7;fill-opacity:1;fill-rule:nonzero;stroke:#5aa02c;stroke-width:0.99999988;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
            id="rect8579"
-           width="5.5"
+           width="5.1785707"
            height="25.401535"
-           x="444.05377"
+           x="444.37521"
            y="-253.64084" />
         <rect
            y="228.48862"
            x="-429.98236"
            height="25.401535"
-           width="5.5"
+           width="4.8214278"
            id="rect8581"
-           style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:0.98999999;fill:#e3f4d7;fill-opacity:1;fill-rule:nonzero;stroke:#5aa02c;stroke-width:0.99999988;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
-           inkscape:transform-center-x="3.3000188"
+           style="opacity:0.98999999;color:#000000;fill:#e3f4d7;fill-opacity:1;fill-rule:nonzero;stroke:#5aa02c;stroke-width:0.99999988;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           inkscape:transform-center-x="2.892873"
            inkscape:transform-center-y="-13.219183" />
       </g>
     </g>
